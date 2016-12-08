@@ -136,6 +136,7 @@ function propsFromPropTypes(type) {
   }
 
   if (type.defaultProps) {
+    props = {};
     for (var _property in type.defaultProps) {
       if (!type.defaultProps.hasOwnProperty(_property)) {
         continue;
